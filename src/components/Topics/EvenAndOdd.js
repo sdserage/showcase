@@ -32,12 +32,12 @@ class EvenAndOdd extends Component {
 
   render(){
     return(
-      <div className="puzzleBox EvenAndOddPB">
+      <div className="puzzleBox evenAndOddPB">
         <h4>Evens and Odds</h4>
         <input className="inputLine" onChange={ (e)=> this.updateUserInput(e.target.value) }/>
         <button className="confirmationButton" onClick={ ()=> this.solve() }>Split</button>
-        <span className="resultBox">Evens: [{this.state.evenArray.join()}]</span>
-        <span className="resultBox">Odds: [{this.state.oddArray.join()}]</span>
+        <span className="resultsBox">Evens: [{this.state.evenArray.join()}]</span>
+        <span className="resultsBox">Odds: [{this.state.oddArray.join()}]</span>
       </div>
     )
   }
